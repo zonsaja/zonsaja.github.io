@@ -1,0 +1,47 @@
+<html>
+<head>
+<style type="text/css">
+	body { margin: 0; padding:0; overflow: hidden; font-size: 14px; font-family: sans-serif; }
+	#channelmenu { position: fixed; z-index: 2147483645; top: 25px; left: 5px; font-family: monospace; }
+	#content { width: 100%; height: 100%; border: 0; overflow: auto; }
+</style>
+</head>
+<body>
+<select id="channelmenu" onchange="changeChannel()">
+  <option value="https://sportsonline.gl/prog.txt">prog.txt</option>
+  <option value="https://v3.sportsonline.ps/channels/hd/hd1.php">hd1</option>
+  <option value="https://v3.sportsonline.ps/channels/hd/hd2.php">hd2</option>
+  <option value="https://v3.sportsonline.ps/channels/hd/hd3.php">hd3</option>
+  <option value="https://v3.sportsonline.ps/channels/hd/hd4.php">hd4</option>
+  <option value="https://v3.sportsonline.ps/channels/hd/hd5.php">hd5</option>
+  <option value="https://v3.sportsonline.ps/channels/hd/hd6.php">hd6</option>
+  <option value="https://v3.sportsonline.ps/channels/hd/hd7.php">hd7</option>
+  <option value="https://v3.sportsonline.ps/channels/hd/hd8.php">hd8</option>
+  <option value="https://v3.sportsonline.ps/channels/hd/hd9.php">hd9</option>
+  <option value="https://v3.sportsonline.ps/channels/hd/hd10.php">hd10</option>
+  <option value="https://v3.sportsonline.ps/channels/hd/hd11.php">hd11</option>
+  <option value="https://v3.sportsonline.ps/channels/bra/br1.php">br1</option>
+  <option value="https://v3.sportsonline.ps/channels/bra/br2.php">br2</option>
+  <option value="https://v3.sportsonline.ps/channels/bra/br3.php">br3</option>
+  <option value="https://v3.sportsonline.ps/channels/bra/br4.php">br4</option>
+  <option value="https://v3.sportsonline.ps/channels/bra/br5.php">br5</option>
+  <option value="https://v3.sportsonline.ps/channels/pt/sporttv1.php">sporttv1</option>
+  <option value="https://v3.sportsonline.ps/channels/pt/sporttv2.php">sporttv2</option>
+  <option value="https://v3.sportsonline.ps/channels/pt/sporttv3.php">sporttv3</option>
+  <option value="https://v3.sportsonline.ps/channels/pt/sporttv4.php">sporttv4</option>
+  <option value="https://v3.sportsonline.ps/channels/pt/sporttv5.php">sporttv5</option>
+  <option value="https://v3.sportsonline.ps/channels/pt/eleven1.php">eleven1</option>
+  <option value="https://v3.sportsonline.ps/channels/pt/eleven2.php">eleven2</option>
+  <option value="https://v3.sportsonline.ps/channels/pt/eleven3.php">eleven3</option>
+  <option value="https://soccerlive.app/">soccerlive</option>
+</select>
+<script>
+function changeChannel() {
+  var x = document.getElementById("channelmenu").value;
+  document.getElementById("content").src = x;
+}
+</script>
+<iframe id="content" src="https://sportsonline.gl/prog.txt"/>
+</body>
+</html>
+
